@@ -1,0 +1,40 @@
+Project Overview:
+
+This Cucumber BDD (Behavior Driven Development) project. It organizes the project's components in a clear and maintainable manner.
+
+Key Components:
+
+src: The root directory for the project's source code.
+
+test: Contains all test-related code, including Cucumber feature files and step definitions.
+
+java: Houses the Java source code for the project.
+
+com: A common package convention to organize Java classes.
+
+example: The project's specific package name.
+
+step_definition: Contains step definition files (.java files) that implement the steps defined in feature files.
+
+pages: (Optional) May contain page object classes for web automation (if using web UI testing).
+
+api: (Optional) May contain API client classes for interacting with APIs (if using API testing).
+
+runners: Contains runner classes that configure and execute the Cucumber tests.
+
+utilities:
+resources: Stores additional resources like configuration files or external data files.
+
+features: Contains feature files (.feature files) that describe the behavior of the application in Gherkin syntax.
+
+
+
+Usage:
+
+Feature Files: Create feature files in the features directory. These files define the scenarios (test cases) using Gherkin syntax.
+
+Step Definitions: Implement the steps defined in feature files by creating step definition classes in the steps directory. These classes map Gherkin steps to actual Java code that interacts with the application under test.
+
+Runners: Create runner classes in the runners directory to configure and execute the Cucumber tests. These classes specify the feature files to run and any additional options.
+
+Execution: Use a Cucumber runner tool (e.g., Maven Cucumber plugin, IntelliJ IDEA Cucumber plugin) to execute the tests. The runner will parse feature files, match steps to step definitions, and execute the scenarios.
